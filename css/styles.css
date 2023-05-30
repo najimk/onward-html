@@ -71,7 +71,17 @@ h3 {
     padding: 1rem;
   }
   #branding .navbar .navbar-collapse .navbar-nav {
-    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  #branding .navbar .navbar-collapse .navbar-nav li {
+    font-weight: 600;
+  }
+  #branding .navbar .navbar-collapse .navbar-nav li a {
+    color: #ffffff;
+  }
+  #branding .navbar .navbar-collapse .navbar-nav li a:hover {
+    color: var(--ori-green);
   }
 }
 #slider {
