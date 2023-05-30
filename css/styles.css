@@ -39,13 +39,19 @@ h3 {
 #branding {
   border-top: 5px solid var(--ori-green);
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   #branding .logo {
     z-index: 10;
   }
   #branding .mobile-menu {
     position: absolute;
     padding: 0px;
+  }
+}
+@media (min-width: 768px) {
+  #branding .logo img {
+    width: 125px;
+    height: auto;
   }
 }
 #branding .navbar .navbar-toggler {
@@ -58,24 +64,31 @@ h3 {
 #branding .navbar button:focus:not(:focus-visible) {
   box-shadow: unset;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   #branding .navbar .container-fluid {
     justify-content: end;
     padding: 0;
   }
+}
+@media (max-width: 768px) {
   #branding .navbar .navbar-collapse {
     position: relative;
     top: 12px;
     background: linear-gradient(267deg, #491e1e, #7c3504);
     z-index: 99;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
   }
-  #branding .navbar .navbar-collapse .navbar-nav {
-    margin: 0px;
-    padding: 0px;
-  }
+}
+#branding .navbar .navbar-collapse .navbar-nav {
+  margin: 0px;
+  padding: 0px;
+}
+#branding .navbar .navbar-collapse .navbar-nav li {
+  font-weight: 600;
+}
+@media (max-width: 768px) {
   #branding .navbar .navbar-collapse .navbar-nav li {
-    font-weight: 600;
+    font-size: 105%;
   }
   #branding .navbar .navbar-collapse .navbar-nav li a {
     color: #ffffff;
@@ -86,12 +99,54 @@ h3 {
   #branding .navbar .navbar-collapse .navbar-nav li a.active {
     color: var(--ori-green);
   }
-  #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
-    border-radius: 0px;
+}
+@media (min-width: 768px) {
+  #branding .navbar .navbar-collapse .navbar-nav li a {
+    color: #000000;
   }
-  #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu li a {
+  #branding .navbar .navbar-collapse .navbar-nav li a.active {
     color: var(--ori-brown);
   }
+}
+@media (min-width: 1200px) {
+  #branding .navbar .navbar-collapse .navbar-nav li {
+    font-size: 115%;
+  }
+}
+#branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
+  border-radius: 0px;
+}
+#branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu li a {
+  color: var(--ori-brown);
+}
+@media (min-width: 992px) {
+  #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
+    background: var(--ori-brown);
+  }
+  #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu li {
+    margin: 0px;
+    padding: 0px;
+  }
+  #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu li a {
+    color: #ffffff;
+  }
+  #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu li a:hover {
+    background-color: var(--ori-brown);
+    color: var(--ori-green);
+  }
+}
+#branding .social {
+  border-left: 3px solid #000000;
+}
+#branding .social a {
+  color: #000000;
+}
+#branding .social a:hover {
+  color: var(--ori-green);
+}
+#branding .social i {
+  margin: 0px 20px;
+  font-size: 110%;
 }
 #slider {
   margin: 0px;
@@ -110,6 +165,18 @@ h3 {
   text-align: left;
   z-index: 5;
 }
+@media (min-width: 768px) {
+  #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text {
+    width: 60%;
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text {
+    width: 45%;
+    padding: 2.5rem;
+  }
+}
 #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text::after {
   content: "";
   display: block;
@@ -127,6 +194,12 @@ h3 {
   font-weight: 600;
   font-size: 1.75rem;
 }
+@media (min-width: 992px) {
+  #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text h5 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+}
 #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text h5 span {
   color: var(--ori-green);
 }
@@ -137,6 +210,16 @@ h3 {
   height: 500px;
   width: 100%;
   object-fit: cover;
+}
+@media only screen and (min-width: 992px) {
+  #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item img {
+    height: 550px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item img {
+    height: 580px;
+  }
 }
 .block-title-style span {
   text-transform: uppercase;
