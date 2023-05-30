@@ -46,6 +46,49 @@ h3 {
 
 #branding {
   border-top: 5px solid var(--ori-green);
+
+  @media (max-width: 576px) {
+    .logo {
+      z-index: 10;
+    }
+
+    .mobile-menu {
+      position: absolute;
+      padding: 0px;
+    }
+  }
+
+  .navbar {
+    .navbar-toggler {
+      border: 0px;
+      margin: 0px 8px 0 0;
+      padding: 0px;
+      font-size: 150%;
+      font-weight: 700;
+    }
+
+    button:focus:not(:focus-visible) {
+      box-shadow: unset;
+    }
+
+    // position the mobile responsive menu
+    @media (max-width: 576px) {
+      .container-fluid {
+        justify-content: end;
+        padding: 0;
+      }
+      .navbar-collapse {
+        position: relative;
+        top: 12px;
+        background: linear-gradient(267deg, #491e1e, #7c3504);
+        z-index: 99;
+        padding: 1rem;
+        .navbar-nav {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 #slider {

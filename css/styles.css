@@ -39,6 +39,41 @@ h3 {
 #branding {
   border-top: 5px solid var(--ori-green);
 }
+@media (max-width: 576px) {
+  #branding .logo {
+    z-index: 10;
+  }
+  #branding .mobile-menu {
+    position: absolute;
+    padding: 0px;
+  }
+}
+#branding .navbar .navbar-toggler {
+  border: 0px;
+  margin: 0px 8px 0 0;
+  padding: 0px;
+  font-size: 150%;
+  font-weight: 700;
+}
+#branding .navbar button:focus:not(:focus-visible) {
+  box-shadow: unset;
+}
+@media (max-width: 576px) {
+  #branding .navbar .container-fluid {
+    justify-content: end;
+    padding: 0;
+  }
+  #branding .navbar .navbar-collapse {
+    position: relative;
+    top: 12px;
+    background: linear-gradient(267deg, #491e1e, #7c3504);
+    z-index: 99;
+    padding: 1rem;
+  }
+  #branding .navbar .navbar-collapse .navbar-nav {
+    width: 100%;
+  }
+}
 #slider {
   margin: 0px;
 }
