@@ -38,10 +38,12 @@ h3 {
 }
 
 .btn {
-  border: 1px solid #000;
+  border: 1px solid var(--ori-brown);
   text-transform: uppercase;
   border-radius: 0px;
   font-weight: 600;
+  outline: none;
+  box-shadow: none;
 }
 
 #branding {
@@ -121,6 +123,9 @@ h3 {
           @media (min-width: 768px) {
             a {
               color: #000000;
+              &:hover {
+                color: var(--ori-brown);
+              }
             }
 
             a.active {
@@ -301,6 +306,30 @@ h3 {
   }
 }
 
+//homepage preface background
+body.front {
+  #preface {
+    background: url(../images/logo-accent.png) no-repeat;
+    background-position: -70% -3%;
+    background-size: 80%;
+    @media (min-width: 768px) {
+      background-position: -10% -5%;
+      background-size: initial;
+    }
+
+    .btn-brown {
+      background-color: var(--ori-brown);
+      color: #ffffff;
+
+      &:hover {
+        background-color: var(--ori-green);
+        color: #000000;
+        border-color: var(--ori-green);
+      }
+    }
+  }
+}
+
 #content-before {
   padding: 0px;
 
@@ -378,7 +407,7 @@ h3 {
 }
 
 #content-after {
-  background-color: var(--ori-brown);
+  background: linear-gradient(90deg, var(--ori-brown) 50%, #f2f2f2 10%);
   padding: 3rem 0;
 
   .btn-green {
@@ -497,6 +526,16 @@ h3 {
           width: 60%;
         }
       }
+    }
+  }
+
+  .btn-brown {
+    border: 1px solid #000000;
+
+    &:hover {
+      background-color: var(--ori-brown);
+      color: #ffffff;
+      border-color: var(--ori-brown);
     }
   }
 }
