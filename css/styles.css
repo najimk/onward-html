@@ -96,6 +96,64 @@ h3 {
 #slider {
   margin: 0px;
 }
+#slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item {
+  position: relative;
+}
+#slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption {
+  top: 15%;
+  left: 5%;
+}
+#slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text {
+  border-top: 2px solid #b9b9b9;
+  padding: 1.5rem;
+  position: relative;
+  text-align: left;
+}
+#slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.45;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+#slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text h5 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+#slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text h5 span {
+  color: var(--ori-green);
+}
+#slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text p {
+  font-size: 125%;
+}
+@media only screen and (min-width: 768px) {
+  #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption {
+    width: 50%;
+    bottom: 9em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption {
+    width: 40%;
+    bottom: 11em;
+  }
+}
+#slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
 .block-title-style span {
   text-transform: uppercase;
   font-weight: 600;
