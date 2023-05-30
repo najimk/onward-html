@@ -124,7 +124,7 @@ h3 {
         position: relative;
 
         .carousel-caption {
-          top: 15%;
+          top: 20%;
           left: 5%;
 
           .slide-text {
@@ -132,6 +132,7 @@ h3 {
             padding: 1.5rem;
             position: relative;
             text-align: left;
+            z-index: 5;
 
             &::after {
               content: "";
@@ -157,27 +158,13 @@ h3 {
             }
 
             p {
-              font-size: 125%;
+              font-size: 120%;
             }
-          }
-
-          @media only screen and (min-width: 768px) {
-            width: 60%;
-          }
-
-          @media only screen and (min-width: 992px) {
-            width: 50%;
-            bottom: 9em;
-          }
-
-          @media only screen and (min-width: 1200px) {
-            width: 40%;
-            bottom: 11em;
           }
         }
 
         img {
-          height: 450px;
+          height: 500px;
           width: 100%;
           object-fit: cover;
 
