@@ -83,6 +83,15 @@ h3 {
   #branding .navbar .navbar-collapse .navbar-nav li a:hover {
     color: var(--ori-green);
   }
+  #branding .navbar .navbar-collapse .navbar-nav li a.active {
+    color: var(--ori-green);
+  }
+  #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
+    border-radius: 0px;
+  }
+  #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu li a {
+    color: var(--ori-brown);
+  }
 }
 #slider {
   margin: 0px;
