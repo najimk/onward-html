@@ -350,8 +350,13 @@ body.front #preface .btn-brown:hover {
   color: #ffffff;
 }
 #content-after {
-  background: linear-gradient(90deg, var(--ori-brown) 50%, #f2f2f2 10%);
+  background: var(--ori-brown);
   padding: 3rem 0;
+}
+@media (min-width: 768px) {
+  #content-after {
+    background: linear-gradient(90deg, var(--ori-brown) 50%, #ececec 10%);
+  }
 }
 #content-after .btn-green {
   border-color: #ffffff;
