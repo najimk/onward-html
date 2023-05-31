@@ -481,6 +481,80 @@ h3 {
   }
 }
 
+#main-content {
+  .expertise-grid {
+    list-style: none;
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    li {
+      background: #ececec;
+      padding-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 576px) {
+        padding: 0;
+      }
+
+      @media (min-width: 768px) {
+        img {
+          object-fit: cover;
+          max-height: 230px;
+        }
+      }
+
+      div.card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h4 {
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 105%;
+        }
+
+        a {
+          color: #000000;
+        }
+
+        &:hover {
+          a {
+            color: var(--ori-green);
+          }
+        }
+      }
+
+      &:hover {
+        background-color: var(--ori-brown);
+        color: #ffffff;
+        a {
+          color: var(--ori-green);
+        }
+
+        h4 {
+          a {
+            color: #ffffff !important;
+          }
+        }
+      }
+    }
+  }
+}
+
 #content-after {
   background: var(--ori-brown);
   padding: 3rem 0;

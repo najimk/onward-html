@@ -419,6 +419,68 @@ h3 {
     padding-right: 5rem;
   }
 }
+#main-content .expertise-grid {
+  list-style: none;
+  display: grid;
+  margin: 0px;
+  padding: 0px;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  #main-content .expertise-grid {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  #main-content .expertise-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+#main-content .expertise-grid li {
+  background: #ececec;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  #main-content .expertise-grid li {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  #main-content .expertise-grid li img {
+    object-fit: cover;
+    max-height: 230px;
+  }
+}
+#main-content .expertise-grid li div.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#main-content .expertise-grid li div.card-body h4 {
+  font-weight: 700;
+}
+#main-content .expertise-grid li div.card-body p {
+  font-size: 105%;
+}
+#main-content .expertise-grid li div.card-body a {
+  color: #000000;
+}
+#main-content .expertise-grid li div.card-body:hover a {
+  color: var(--ori-green);
+}
+#main-content .expertise-grid li:hover {
+  background-color: var(--ori-brown);
+  color: #ffffff;
+}
+#main-content .expertise-grid li:hover a {
+  color: var(--ori-green);
+}
+#main-content .expertise-grid li:hover h4 a {
+  color: #ffffff !important;
+}
 #content-after {
   background: var(--ori-brown);
   padding: 3rem 0;
