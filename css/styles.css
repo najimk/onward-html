@@ -18,6 +18,9 @@ body {
 a {
   text-decoration: none;
 }
+a i {
+  margin-left: 5px;
+}
 ul,
 ol {
   margin: 0px;
@@ -322,6 +325,9 @@ body.front #preface .btn-brown:hover {
 }
 #content-before .expertise-grid li div.caption {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media (min-width: 576px) {
   #content-before .expertise-grid li div.caption {
@@ -338,12 +344,18 @@ body.front #preface .btn-brown:hover {
 #content-before .expertise-grid li div.caption h3 {
   font-weight: 700;
 }
+#content-before .expertise-grid li div.caption a {
+  color: #000000;
+}
+#content-before .expertise-grid li div.caption:hover a {
+  color: var(--ori-green);
+}
 #content-before .expertise-grid li:hover {
   background-color: var(--ori-brown);
   color: #ffffff;
 }
 #content-before .expertise-grid li:hover a {
-  color: var(--ori-green);
+  color: var(--ori-green) !important;
 }
 #content-before .btn-brown:hover {
   background-color: var(--ori-brown);
@@ -357,6 +369,9 @@ body.front #preface .btn-brown:hover {
   #content-after {
     background: linear-gradient(90deg, var(--ori-brown) 50%, #ececec 10%);
   }
+}
+#content-after p {
+  line-height: 1.9rem;
 }
 #content-after .btn-green {
   border-color: #ffffff;
