@@ -345,6 +345,10 @@ body.front #preface .btn-brown:hover {
   color: #000000;
   border-color: var(--ori-green);
 }
+body.front #preface::before,
+body.front #preface::after {
+  content: none;
+}
 #content-before {
   padding: 0px;
 }
