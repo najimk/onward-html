@@ -419,7 +419,8 @@ h3 {
     padding-right: 5rem;
   }
 }
-#main-content .expertise-grid {
+#main-content .expertise-grid,
+#content-bottom .expertise-grid {
   list-style: none;
   display: grid;
   margin: 0px;
@@ -427,58 +428,71 @@ h3 {
   gap: 1rem;
 }
 @media (min-width: 768px) {
-  #main-content .expertise-grid {
+  #main-content .expertise-grid,
+  #content-bottom .expertise-grid {
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 992px) {
-  #main-content .expertise-grid {
+  #main-content .expertise-grid,
+  #content-bottom .expertise-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-#main-content .expertise-grid li {
+#main-content .expertise-grid li,
+#content-bottom .expertise-grid li {
   background: #ececec;
   padding-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 576px) {
-  #main-content .expertise-grid li {
+  #main-content .expertise-grid li,
+  #content-bottom .expertise-grid li {
     padding: 0;
   }
 }
 @media (min-width: 768px) {
-  #main-content .expertise-grid li img {
+  #main-content .expertise-grid li img,
+  #content-bottom .expertise-grid li img {
     object-fit: cover;
     max-height: 230px;
   }
 }
-#main-content .expertise-grid li div.card-body {
+#main-content .expertise-grid li div.card-body,
+#content-bottom .expertise-grid li div.card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#main-content .expertise-grid li div.card-body h4 {
+#main-content .expertise-grid li div.card-body h4,
+#content-bottom .expertise-grid li div.card-body h4 {
   font-weight: 700;
 }
-#main-content .expertise-grid li div.card-body p {
+#main-content .expertise-grid li div.card-body p,
+#content-bottom .expertise-grid li div.card-body p {
   font-size: 105%;
 }
-#main-content .expertise-grid li div.card-body a {
+#main-content .expertise-grid li div.card-body a,
+#content-bottom .expertise-grid li div.card-body a {
   color: #000000;
 }
-#main-content .expertise-grid li div.card-body:hover a {
+#main-content .expertise-grid li div.card-body:hover a,
+#content-bottom .expertise-grid li div.card-body:hover a {
   color: var(--ori-green);
 }
-#main-content .expertise-grid li:hover {
+#main-content .expertise-grid li:hover,
+#content-bottom .expertise-grid li:hover {
   background-color: var(--ori-brown);
   color: #ffffff;
 }
-#main-content .expertise-grid li:hover a {
+#main-content .expertise-grid li:hover a,
+#content-bottom .expertise-grid li:hover a {
   color: var(--ori-green);
 }
-#main-content .expertise-grid li:hover h4 a {
+#main-content .expertise-grid li:hover h4 a,
+#content-bottom .expertise-grid li:hover h4 a {
   color: #ffffff !important;
 }
 #content-after {
@@ -536,10 +550,12 @@ h3 {
 #content-after ul.practice-list li div a {
   color: var(--ori-green);
 }
-#news-updates {
+#news-updates,
+#main-content {
   padding: 0;
 }
-#news-updates .newslist {
+#news-updates .newslist,
+#main-content .newslist {
   list-style: none;
   display: grid;
   padding: 0px;
@@ -547,59 +563,79 @@ h3 {
   gap: 1.5rem;
 }
 @media (min-width: 768px) {
-  #news-updates .newslist {
+  #news-updates .newslist,
+  #main-content .newslist {
     grid-template-columns: 1fr 1fr;
   }
 }
-#news-updates .newslist li {
+#news-updates .newslist li,
+#main-content .newslist li {
   background-color: #f2f2f2;
 }
-#news-updates .newslist li img {
+#news-updates .newslist li img,
+#main-content .newslist li img {
   width: 100%;
   height: auto;
 }
-#news-updates .newslist li div.body {
+#news-updates .newslist li div.body,
+#main-content .newslist li div.body {
   padding: 1.5rem;
 }
-#news-updates .newslist li div.body span {
+#news-updates .newslist li div.body span,
+#main-content .newslist li div.body span {
   color: var(--ori-green);
 }
-#news-updates .newslist li div.body h3 {
+#news-updates .newslist li div.body h3,
+#main-content .newslist li div.body h3 {
   font-weight: 600;
 }
-#news-updates .newslist li div.body p {
+#news-updates .newslist li div.body p,
+#main-content .newslist li div.body p {
   border-bottom: 1px solid #cccccc;
   padding: 0 0 1rem;
 }
-#news-updates .newslist li div.body a {
+#news-updates .newslist li div.body a,
+#main-content .newslist li div.body a {
   font-weight: 500;
   font-size: 90%;
   color: var(--ori-brown);
 }
 @media (min-width: 576px) {
-  #news-updates .newslist li {
+  #news-updates .newslist li,
+  #main-content .newslist li {
     display: flex;
   }
-  #news-updates .newslist li div.img {
+  #news-updates .newslist li div.img,
+  #main-content .newslist li div.img {
     width: 40%;
   }
-  #news-updates .newslist li div.img img {
+  #news-updates .newslist li div.img img,
+  #main-content .newslist li div.img img {
     width: initial;
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  #news-updates .newslist li div.body {
+  #news-updates .newslist li div.body,
+  #main-content .newslist li div.body {
     width: 60%;
   }
 }
-#news-updates .btn-brown {
+#news-updates .btn-brown,
+#main-content .btn-brown {
   border: 1px solid #000000;
 }
-#news-updates .btn-brown:hover {
+#news-updates .btn-brown:hover,
+#main-content .btn-brown:hover {
   background-color: var(--ori-brown);
   color: #ffffff;
   border-color: var(--ori-brown);
+}
+#content-bottom .publications {
+  background: var(--ori-gray);
+}
+#content-bottom .insights h2 {
+  margin-bottom: 2rem;
 }
 .aboutus-wrap {
   background: linear-gradient(to bottom, var(--ori-gray) 250px, #ffffff 250px);

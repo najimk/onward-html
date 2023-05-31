@@ -481,7 +481,8 @@ h3 {
   }
 }
 
-#main-content {
+#main-content,
+#content-bottom {
   .expertise-grid {
     list-style: none;
     display: grid;
@@ -620,7 +621,8 @@ h3 {
   }
 }
 
-#news-updates {
+#news-updates,
+#main-content {
   padding: 0;
 
   .newslist {
@@ -693,6 +695,17 @@ h3 {
       background-color: var(--ori-brown);
       color: #ffffff;
       border-color: var(--ori-brown);
+    }
+  }
+}
+
+#content-bottom {
+  .publications {
+    background: var(--ori-gray);
+  }
+  .insights {
+    h2 {
+      margin-bottom: 2rem;
     }
   }
 }
