@@ -3,6 +3,7 @@
   --ori-green: #93c01f;
   --ori-light-gray: #343434;
   --ori-dark-gray: #2d2d2d;
+  --ori-gray: #f2f2f2;
 }
 
 * {
@@ -375,37 +376,8 @@ h3 {
   }
 }
 
-//homepage preface background
-body.front {
-  #preface {
-    background: url(../images/logo-accent.png) no-repeat;
-    background-position: -70% -3%;
-    background-size: 80%;
-    @media (min-width: 768px) {
-      background-position: -10% -5%;
-      background-size: initial;
-    }
-
-    .btn-brown {
-      background-color: var(--ori-brown);
-      color: #ffffff;
-
-      &:hover {
-        background-color: var(--ori-green);
-        color: #000000;
-        border-color: var(--ori-green);
-      }
-    }
-
-    &::before,
-    &::after {
-      content: none;
-    }
-  }
-}
-
 #content-before {
-  padding: 0px;
+  background: var(--ori-gray);
 
   .expertise-grid {
     list-style: none;
@@ -489,6 +461,22 @@ body.front {
     &:hover {
       background-color: var(--ori-brown);
       color: #ffffff;
+    }
+  }
+
+  h2 {
+    margin: 0.5rem 0 1.5rem;
+  }
+  p {
+    font-size: 130%;
+
+    em {
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @media (min-width: 768px) {
+      padding-right: 5rem;
     }
   }
 }
@@ -632,6 +620,93 @@ body.front {
       color: #ffffff;
       border-color: var(--ori-brown);
     }
+  }
+}
+
+.aboutus-wrap {
+  background: linear-gradient(to bottom, var(--ori-gray) 250px, #ffffff 250px);
+
+  .history-block {
+    -webkit-box-shadow: 0px 2px 7px 3px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 2px 7px 3px rgba(199, 199, 199, 1);
+    box-shadow: 0px 2px 7px 3px rgba(199, 199, 199, 1);
+    margin: 0rem 0.75rem;
+
+    @media (min-width: 768px) {
+      margin: 0px;
+      display: flex;
+    }
+
+    h2 {
+      background: url(../images/globe.jpg) no-repeat;
+      color: #ffffff;
+      padding: 1rem;
+      background-size: cover;
+      margin: 0px;
+
+      @media (min-width: 768px) {
+        width: 30%;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+
+        span {
+          display: block;
+          width: 40%;
+        }
+      }
+    }
+
+    .content {
+      background-color: #ffffff;
+      padding: 1rem;
+
+      p {
+        font-size: 110%;
+      }
+
+      @media (min-width: 768px) {
+        width: 70%;
+        padding: 4rem 5rem;
+
+        p {
+          font-size: 112%;
+        }
+      }
+    }
+  }
+}
+
+//homepage background overrides
+body.front {
+  #preface {
+    background: url(../images/logo-accent.png) no-repeat;
+    background-position: -70% -3%;
+    background-size: 80%;
+    @media (min-width: 768px) {
+      background-position: -10% -5%;
+      background-size: initial;
+    }
+
+    .btn-brown {
+      background-color: var(--ori-brown);
+      color: #ffffff;
+
+      &:hover {
+        background-color: var(--ori-green);
+        color: #000000;
+        border-color: var(--ori-green);
+      }
+    }
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  #content-before {
+    background: none;
   }
 }
 

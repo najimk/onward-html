@@ -3,6 +3,7 @@
   --ori-green: #93c01f;
   --ori-light-gray: #343434;
   --ori-dark-gray: #2d2d2d;
+  --ori-gray: #f2f2f2;
 }
 * {
   box-sizing: border-box;
@@ -325,32 +326,8 @@ h3 {
     margin: 0;
   }
 }
-body.front #preface {
-  background: url(../images/logo-accent.png) no-repeat;
-  background-position: -70% -3%;
-  background-size: 80%;
-}
-@media (min-width: 768px) {
-  body.front #preface {
-    background-position: -10% -5%;
-    background-size: initial;
-  }
-}
-body.front #preface .btn-brown {
-  background-color: var(--ori-brown);
-  color: #ffffff;
-}
-body.front #preface .btn-brown:hover {
-  background-color: var(--ori-green);
-  color: #000000;
-  border-color: var(--ori-green);
-}
-body.front #preface::before,
-body.front #preface::after {
-  content: none;
-}
 #content-before {
-  padding: 0px;
+  background: var(--ori-gray);
 }
 #content-before .expertise-grid {
   list-style: none;
@@ -426,6 +403,21 @@ body.front #preface::after {
 #content-before .btn-brown:hover {
   background-color: var(--ori-brown);
   color: #ffffff;
+}
+#content-before h2 {
+  margin: 0.5rem 0 1.5rem;
+}
+#content-before p {
+  font-size: 130%;
+}
+#content-before p em {
+  font-weight: 600;
+  font-style: normal;
+}
+@media (min-width: 768px) {
+  #content-before p {
+    padding-right: 5rem;
+  }
 }
 #content-after {
   background: var(--ori-brown);
@@ -546,6 +538,83 @@ body.front #preface::after {
   background-color: var(--ori-brown);
   color: #ffffff;
   border-color: var(--ori-brown);
+}
+.aboutus-wrap {
+  background: linear-gradient(to bottom, var(--ori-gray) 250px, #ffffff 250px);
+}
+.aboutus-wrap .history-block {
+  -webkit-box-shadow: 0px 2px 7px 3px #c7c7c7;
+  -moz-box-shadow: 0px 2px 7px 3px #c7c7c7;
+  box-shadow: 0px 2px 7px 3px #c7c7c7;
+  margin: 0rem 0.75rem;
+}
+@media (min-width: 768px) {
+  .aboutus-wrap .history-block {
+    margin: 0px;
+    display: flex;
+  }
+}
+.aboutus-wrap .history-block h2 {
+  background: url(../images/globe.jpg) no-repeat;
+  color: #ffffff;
+  padding: 1rem;
+  background-size: cover;
+  margin: 0px;
+}
+@media (min-width: 768px) {
+  .aboutus-wrap .history-block h2 {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+  .aboutus-wrap .history-block h2 span {
+    display: block;
+    width: 40%;
+  }
+}
+.aboutus-wrap .history-block .content {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.aboutus-wrap .history-block .content p {
+  font-size: 110%;
+}
+@media (min-width: 768px) {
+  .aboutus-wrap .history-block .content {
+    width: 70%;
+    padding: 4rem 5rem;
+  }
+  .aboutus-wrap .history-block .content p {
+    font-size: 112%;
+  }
+}
+body.front #preface {
+  background: url(../images/logo-accent.png) no-repeat;
+  background-position: -70% -3%;
+  background-size: 80%;
+}
+@media (min-width: 768px) {
+  body.front #preface {
+    background-position: -10% -5%;
+    background-size: initial;
+  }
+}
+body.front #preface .btn-brown {
+  background-color: var(--ori-brown);
+  color: #ffffff;
+}
+body.front #preface .btn-brown:hover {
+  background-color: var(--ori-green);
+  color: #000000;
+  border-color: var(--ori-green);
+}
+body.front #preface::before,
+body.front #preface::after {
+  content: none;
+}
+body.front #content-before {
+  background: none;
 }
 #footer {
   background-color: var(--ori-light-gray);
