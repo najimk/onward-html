@@ -42,6 +42,9 @@ h3 {
   outline: none;
   box-shadow: none;
 }
+header {
+  background: #ffffff;
+}
 #branding {
   border-top: 5px solid var(--ori-green);
 }
@@ -168,7 +171,7 @@ h3 {
   left: 5%;
 }
 #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text {
-  border-top: 2px solid #b9b9b9;
+  border-top: 2px solid #f3f3f3;
   padding: 1.5rem;
   position: relative;
   text-align: left;
@@ -495,6 +498,145 @@ h3 {
 #content-bottom .expertise-grid li:hover h4 a {
   color: #ffffff !important;
 }
+#main-content .grid,
+#content-bottom .grid {
+  list-style: none;
+  display: grid;
+  margin: 0 0 2rem;
+  padding: 0px;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  #main-content .grid,
+  #content-bottom .grid {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  #main-content .grid,
+  #content-bottom .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+#main-content .grid li,
+#content-bottom .grid li {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  #main-content .grid li,
+  #content-bottom .grid li {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  #main-content .grid li img,
+  #content-bottom .grid li img {
+    object-fit: cover;
+    max-height: 230px;
+  }
+}
+#main-content .grid li div.card-body,
+#content-bottom .grid li div.card-body {
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#main-content .grid li div.card-body h4,
+#content-bottom .grid li div.card-body h4 {
+  font-weight: 700;
+}
+#main-content .grid li div.card-body p,
+#content-bottom .grid li div.card-body p {
+  font-size: 105%;
+}
+#main-content .grid li div.card-body a,
+#content-bottom .grid li div.card-body a {
+  color: #000000;
+}
+#main-content .grid li div.card-body:hover a,
+#content-bottom .grid li div.card-body:hover a {
+  color: var(--ori-green);
+}
+#main-content .grid li:hover a,
+#content-bottom .grid li:hover a {
+  color: var(--ori-green);
+}
+#main-content .grid li:hover h4 a,
+#content-bottom .grid li:hover h4 a {
+  color: var(--ori-brown) !important;
+}
+#main-content .client-grid,
+#content-bottom .client-grid {
+  list-style: none;
+  display: grid;
+  margin: 0px;
+  padding: 0px;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  #main-content .client-grid,
+  #content-bottom .client-grid {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#main-content .client-grid li,
+#content-bottom .client-grid li {
+  background: #ececec;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  #main-content .client-grid li,
+  #content-bottom .client-grid li {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  #main-content .client-grid li img,
+  #content-bottom .client-grid li img {
+    object-fit: cover;
+    max-height: 438px;
+  }
+}
+#main-content .client-grid li div.card-body,
+#content-bottom .client-grid li div.card-body {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#main-content .client-grid li div.card-body h4,
+#content-bottom .client-grid li div.card-body h4 {
+  font-weight: 700;
+}
+#main-content .client-grid li div.card-body p,
+#content-bottom .client-grid li div.card-body p {
+  font-size: 105%;
+}
+#main-content .client-grid li div.card-body a,
+#content-bottom .client-grid li div.card-body a {
+  color: #000000;
+}
+#main-content .client-grid li div.card-body:hover a,
+#content-bottom .client-grid li div.card-body:hover a {
+  color: var(--ori-green);
+}
+#main-content .client-grid li:hover a,
+#content-bottom .client-grid li:hover a {
+  color: var(--ori-green);
+}
+#main-content .client-grid li:hover h4 a,
+#content-bottom .client-grid li:hover h4 a {
+  color: #000000 !important;
+}
+#main-content h2,
+#content-bottom h2 {
+  margin-bottom: 2rem;
+}
 #content-after {
   background: var(--ori-brown);
   padding: 3rem 0;
@@ -657,10 +799,11 @@ h3 {
   color: #ffffff;
   padding: 1rem;
   background-size: cover;
-  margin: 0px;
+  margin: 0px !important;
 }
 @media (min-width: 768px) {
   .aboutus-wrap .history-block h2 {
+    margin-bottom: 0;
     width: 30%;
     display: flex;
     justify-content: end;
@@ -736,8 +879,14 @@ h3 {
   font-weight: 600;
   font-size: 125%;
 }
+.aboutus-wrap .leadership .grid li .title h3:hover {
+  color: var(--ori-green);
+}
 .aboutus-wrap .leadership .grid li .title h3 a {
   color: #000000;
+}
+.aboutus-wrap .leadership .grid li .title h3 a:hover {
+  color: var(--ori-green);
 }
 @media (min-width: 576px) {
   .aboutus-wrap .leadership .grid li {
