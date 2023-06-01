@@ -4,6 +4,7 @@
   --ori-light-gray: #343434;
   --ori-dark-gray: #2d2d2d;
   --ori-gray: #f2f2f2;
+  --ori-form-element: #f1f1f1;
 }
 * {
   box-sizing: border-box;
@@ -659,6 +660,75 @@ header {
 #content-bottom h2 {
   margin-bottom: 2rem;
 }
+#main-content .contact-form,
+#content-bottom .contact-form {
+  padding: 1.5em;
+  background: #fff;
+  box-shadow: 2px 8px 24px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 2px 8px 24px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 2px 8px 24px 0px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid var(--ori-green);
+}
+@media (min-width: 768px) {
+  #main-content .contact-form,
+  #content-bottom .contact-form {
+    margin: 7rem auto 4rem;
+    padding: 1.5rem 2.5rem;
+    width: 75%;
+  }
+}
+#main-content .contact-form h3,
+#content-bottom .contact-form h3 {
+  text-align: center;
+  font-weight: 600;
+}
+#main-content .contact-form form,
+#content-bottom .contact-form form {
+  margin: 2rem 0 1rem;
+}
+#main-content .contact-form form .webform-elements,
+#content-bottom .contact-form form .webform-elements {
+  gap: 1rem;
+}
+#main-content .contact-form form .form-control,
+#content-bottom .contact-form form .form-control {
+  border-radius: unset;
+  width: 100%;
+  border: none;
+  background-color: var(--ori-form-element);
+  padding: 0.5em 1em;
+}
+#main-content .contact-form form .webform-button--submit,
+#content-bottom .contact-form form .webform-button--submit {
+  border-radius: unset;
+  color: #fff;
+  background: var(--ori-brown);
+  box-shadow: none;
+  border: none;
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+}
+#mc_embed_signup_scroll {
+  color: #ffffff;
+}
+#mc_embed_signup_scroll .indicates-required,
+#mc_embed_signup_scroll label {
+  display: none;
+}
+#mc_embed_signup_scroll input {
+  border-radius: unset;
+  width: 100%;
+  border: none;
+  background-color: var(--ori-form-element);
+  padding: 0.35em 1em;
+  margin-bottom: 0.75rem;
+}
+#mc_embed_signup_scroll input.button {
+  width: 180px;
+  background: var(--ori-brown);
+  color: #ffffff;
+  font-weight: 600;
+}
 #content-after {
   background: var(--ori-brown);
   padding: 3rem 0;
@@ -1048,6 +1118,11 @@ body.front #preface::after {
 }
 body.front #content-before {
   background: none;
+}
+@media (min-width: 768px) {
+  #map iframe {
+    min-height: 500px;
+  }
 }
 #footer {
   background-color: var(--ori-light-gray);

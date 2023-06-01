@@ -189,27 +189,55 @@
     <section id="main-content">
       <div class="container my-5">
         <div class="contact-form">
-          <h4>Write to us for all your inquiries</h4>
+          <h3>Write to us for all your inquiries</h3>
           <form action="">
-            <div>
-              <div>
-                <input type="text" placeholder="Your name" name="name" />
+            <div class="d-md-flex webform-elements">
+              <div class="mb-3 flex-grow-1">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  name="name"
+                  class="form-control"
+                />
               </div>
-              <div>
-                <input type="text" placeholder="Email" name="name" />
+              <div class="mb-3 flex-grow-1">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  name="name"
+                  class="form-control"
+                />
               </div>
-              <div>
-                <input type="text" placeholder="subject" name="subject" />
+              <div class="mb-3 flex-grow-1">
+                <input
+                  type="text"
+                  placeholder="subject"
+                  name="subject"
+                  class="form-control"
+                />
               </div>
             </div>
-            <div>
+            <div class="mb-3">
               <textarea
                 name="message"
                 id="messaage"
                 cols="100%"
                 rows="10"
                 placeholder="message"
+                class="form-control"
               ></textarea>
+            </div>
+            <div class="text-center pt-3">
+              <button
+                class="webform-button--submit button button--primary js-form-submit form-submit btn btn-primary"
+                data-drupal-selector="edit-actions-submit"
+                type="submit"
+                id="edit-actions-submit"
+                name="op"
+                value="Send message"
+              >
+                Send message
+              </button>
             </div>
           </form>
         </div>
