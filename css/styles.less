@@ -769,6 +769,31 @@ header {
 #main-content {
   padding: 0;
 
+  .case-nav {
+    .nav-item {
+      background: var(--ori-gray);
+      font-weight: 600;
+
+      a {
+        color: #000000;
+        font-size: 120%;
+        font-size: 110%;
+        padding: 0.75rem 2rem;
+        border-radius: 0;
+
+        &:hover {
+          background-color: var(--ori-brown);
+          color: #ffffff;
+        }
+      }
+
+      a.active {
+        background-color: var(--ori-green);
+        color: #ffffff;
+      }
+    }
+  }
+
   .newslist {
     list-style: none;
     display: grid;

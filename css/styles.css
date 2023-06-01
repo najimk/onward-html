@@ -696,6 +696,29 @@ header {
 #main-content {
   padding: 0;
 }
+#news-updates .case-nav .nav-item,
+#main-content .case-nav .nav-item {
+  background: var(--ori-gray);
+  font-weight: 600;
+}
+#news-updates .case-nav .nav-item a,
+#main-content .case-nav .nav-item a {
+  color: #000000;
+  font-size: 120%;
+  font-size: 110%;
+  padding: 0.75rem 2rem;
+  border-radius: 0;
+}
+#news-updates .case-nav .nav-item a:hover,
+#main-content .case-nav .nav-item a:hover {
+  background-color: var(--ori-brown);
+  color: #ffffff;
+}
+#news-updates .case-nav .nav-item a.active,
+#main-content .case-nav .nav-item a.active {
+  background-color: var(--ori-green);
+  color: #ffffff;
+}
 #news-updates .newslist,
 #main-content .newslist {
   list-style: none;
