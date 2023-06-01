@@ -799,6 +799,86 @@ header {
 #content-bottom .publications {
   background: var(--ori-gray);
 }
+#content-bottom .publications .pub-list {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 1rem;
+}
+@media (min-width: 576px) {
+  #content-bottom .publications .pub-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  #content-bottom .publications .pub-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+#content-bottom .publications .pub-list li {
+  display: flex;
+  gap: 1rem;
+}
+@media (min-width: 576px) {
+  #content-bottom .publications .pub-list li {
+    flex-direction: column;
+  }
+}
+#content-bottom .publications .pub-list li div.img {
+  position: relative;
+  padding: 0 0 0 5px;
+}
+#content-bottom .publications .pub-list li div.img span {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background-color: #bcee3a;
+  color: #000000;
+  padding: 0px 10px;
+  font-size: 85%;
+  font-weight: 600;
+}
+#content-bottom .publications .pub-list li div.img img {
+  width: 105px;
+  height: 124px;
+  object-fit: cover;
+  border: 1px solid #dddbdb;
+}
+@media (min-width: 768px) {
+  #content-bottom .publications .pub-list li div.img img {
+    width: 100%;
+    height: 410px;
+  }
+}
+#content-bottom .publications .pub-list li div.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#content-bottom .publications .pub-list li div.title h3 {
+  font-weight: 600;
+  font-size: 115%;
+}
+@media (min-width: 768px) {
+  #content-bottom .publications .pub-list li div.title h3 {
+    font-size: 130%;
+    margin-bottom: 1.5rem;
+  }
+}
+#content-bottom .publications .pub-list li div.title .links {
+  text-transform: uppercase;
+  font-size: 85%;
+  font-weight: 600;
+}
+#content-bottom .publications .pub-list li div.title .links a {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  color: var(--ori-brown);
+}
+#content-bottom .publications .pub-list li div.title .links a:nth-child(2) {
+  color: var(--ori-green);
+}
 #content-bottom .insights h2 {
   margin-bottom: 2rem;
 }

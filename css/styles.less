@@ -871,7 +871,93 @@ header {
 #content-bottom {
   .publications {
     background: var(--ori-gray);
+
+    .pub-list {
+      display: grid;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      gap: 1rem;
+
+      @media (min-width: 576px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      li {
+        display: flex;
+        gap: 1rem;
+
+        @media (min-width: 576px) {
+          flex-direction: column;
+        }
+
+        div.img {
+          position: relative;
+          padding: 0 0 0 5px;
+
+          span {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            background-color: #bcee3a;
+            color: #000000;
+            padding: 0px 10px;
+            font-size: 85%;
+            font-weight: 600;
+          }
+
+          img {
+            width: 105px;
+            height: 124px;
+            object-fit: cover;
+            border: 1px solid #dddbdb;
+
+            @media (min-width: 768px) {
+              width: 100%;
+              height: 410px;
+            }
+          }
+        }
+
+        div.title {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          h3 {
+            font-weight: 600;
+            font-size: 115%;
+
+            @media (min-width: 768px) {
+              font-size: 130%;
+              margin-bottom: 1.5rem;
+            }
+          }
+
+          .links {
+            text-transform: uppercase;
+            font-size: 85%;
+            font-weight: 600;
+
+            a {
+              display: inline-block;
+              padding: 0 15px 0 0;
+              color: var(--ori-brown);
+            }
+
+            a:nth-child(2) {
+              color: var(--ori-green);
+            }
+          }
+        }
+      }
+    }
   }
+
   .insights {
     h2 {
       margin-bottom: 2rem;
