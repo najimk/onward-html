@@ -422,6 +422,28 @@ header {
     padding-right: 5rem;
   }
 }
+#content-before .contact-info h2 {
+  margin-bottom: 0.5rem;
+}
+#content-before .contact-info h2 span {
+  color: var(--ori-brown);
+}
+#content-before .contact-info h4 {
+  font-weight: 600;
+  margin: 2rem 0 1.5rem;
+}
+#content-before .contact-info p {
+  font-size: 115%;
+  padding: 0;
+}
+#content-before .contact-info p i {
+  color: var(--ori-green);
+  padding-right: 6px;
+}
+#content-before .contact-info p:nth-child(3),
+#content-before .contact-info p:nth-child(4) {
+  font-weight: 600;
+}
 #main-content .expertise-grid,
 #content-bottom .expertise-grid {
   list-style: none;
