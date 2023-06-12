@@ -26,7 +26,6 @@ a i {
 ul,
 ol {
   margin: 0px;
-  padding: 0px;
 }
 h2 {
   font-weight: 700;
@@ -787,6 +786,15 @@ header {
 #content-bottom article p {
   font-size: 120%;
 }
+#main-content article ul,
+#content-bottom article ul {
+  list-style-type: square;
+  font-size: 120%;
+}
+#main-content article ul li,
+#content-bottom article ul li {
+  line-height: 1.75rem;
+}
 @media (min-width: 768px) {
   #main-content article .node-share,
   #content-bottom article .node-share,
@@ -1241,8 +1249,19 @@ body.path-frontpage #content-before {
   padding: 1.25rem;
   margin: 0.5rem 0;
 }
+.tab-content img {
+  width: 100%;
+  height: auto;
+}
 .tab-content p {
   font-size: 120% !important;
+}
+.tab-content ul {
+  list-style-type: square;
+  font-size: 120%;
+}
+.tab-content ul li {
+  line-height: 1.75rem;
 }
 @media (min-width: 768px) {
   #map iframe {
