@@ -786,6 +786,11 @@ header {
 #content-bottom article p {
   font-size: 120%;
 }
+#main-content article img,
+#content-bottom article img {
+  width: 100%;
+  height: auto;
+}
 #main-content article ul,
 #content-bottom article ul {
   list-style-type: square;
@@ -1243,6 +1248,22 @@ body.path-frontpage #content-before {
   color: var(--ori-brown);
   border: 0px;
 }
+@media (min-width: 992px) {
+  .nav-tabs {
+    display: initial;
+  }
+  .nav-tabs li {
+    margin-bottom: 1rem;
+  }
+  .nav-tabs li button {
+    width: 100%;
+    text-align: left;
+    padding: 1.25rem 2rem;
+  }
+  .nav-tabs li .nav-link {
+    font-size: 120%;
+  }
+}
 .tab-content {
   border-radius: 5px;
   background: #ffffff;
@@ -1262,6 +1283,18 @@ body.path-frontpage #content-before {
 }
 .tab-content ul li {
   line-height: 1.75rem;
+}
+@media (min-width: 992px) {
+  .tab-wrapper {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .tab-wrapper .tab-content {
+    margin: 0;
+    padding: 3.2rem 3.75rem;
+  }
 }
 @media (min-width: 768px) {
   #map iframe {
